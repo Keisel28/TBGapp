@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navbar_first_icon"
+        android:title="@string/navbar_tenant_gps_title"
+        android:icon="@drawable/tenant_gps_icon" />
+    <item
+        android:id="@+id/navbar_second_icon"
+        android:title="@string/navbar_tenant_current_listings"
+        android:icon="@drawable/tenant_gps_icon"/>
+    <item
+        android:id="@+id/navbar_third_icon"
+        android:title="@string/navbar_tenant_settings"
+        android:icon="@drawable/tenant_gps_icon"/>
+
+
+</menu>
