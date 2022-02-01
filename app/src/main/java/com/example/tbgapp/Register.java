@@ -129,7 +129,6 @@ public class Register extends Fragment {
             protected String doInBackground(Void... voids) {
                 //creating request handler object
                 RequestHandler requestHandler = new RequestHandler();
-                Log.d("DEBUG","DOINBACKGROUND");
                 //creating request parameters
                 HashMap<String, String> params = new HashMap<>();
                 params.put("username", username);
@@ -139,11 +138,11 @@ public class Register extends Fragment {
                 params.put("fullname", "Keith");
                 return requestHandler.sendPostRequest(URLs.URL_REGISTER, params);
             }
-          /*  @Override
+           @Override
             protected void onPreExecute() {
                 super.onPreExecute();
                 //displaying the progress bar while user registers on the server
-                progressBar = (ProgressBar) findViewById(R.id.progressBar);
+                progressBar = (ProgressBar) getView().findViewById(R.id.progressBar);
                 progressBar.setVisibility(View.VISIBLE);
             }
 
@@ -158,8 +157,10 @@ public class Register extends Fragment {
                     JSONObject obj = new JSONObject(s);
 
                     //if no error in response
+
                     if (!obj.getBoolean("error")) {
-                        Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
+
+                        Toast.makeText(getActivity().getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
 
                         //getting the user from the response
                         JSONObject userJson = obj.getJSONObject("user");
@@ -169,22 +170,23 @@ public class Register extends Fragment {
                                 userJson.getInt("id"),
                                 userJson.getString("username"),
                                 userJson.getString("email"),
-
+                                userJson.getString("usertype")
                                 );
 
                         //storing the user in shared preferences
-                        SharedPrefManager.getInstance(getApplicationContext()).userLogin(user);
+                        SharedPrefManager.getInstance(getActivity().getApplicationContext()).userLogin(user);
 
                         //starting the profile activity
-                        finish();
-                        startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+
+                        getActivity().finish();
+                        startActivity(new Intent(getActivity().getApplicationContext(), ProfileActivity.class));
                     } else {
-                        Toast.makeText(getApplicationContext(), "Some error occurred", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity().getApplicationContext(), "Some error occurred", Toast.LENGTH_SHORT).show();
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-            }*/
+            }
         }
 
             //executing the async task
