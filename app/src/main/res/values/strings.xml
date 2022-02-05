@@ -18,5 +18,7 @@
     <string name="navbar_tenant_current_listings">Current Listings</string>
     <string name="navbar_tenant_settings">Settings</string>
     <string name="tenant_history">Your Booking History:</string>
-
+    <string name="swipe_right_for_profile">Swipe Right for Profile</string>
+    <string name="swipe_left_for_listings">Swipe Left for Listings</string>
+    <string name="your_listings">Your Posted Listings:</string>
 </resources>

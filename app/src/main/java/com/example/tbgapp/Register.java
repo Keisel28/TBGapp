@@ -134,7 +134,7 @@ public class Register extends Fragment {
                 params.put("username", username);
                 params.put("email", email);
                 params.put("password", password);
-                params.put("usertype", "L");
+                params.put("usertype", "T");
                 params.put("fullname", "Keith");
                 return requestHandler.sendPostRequest(URLs.URL_REGISTER, params);
             }

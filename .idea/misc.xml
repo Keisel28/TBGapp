@@ -11,7 +11,10 @@
         <entry key="..\:/Users/Keith Lemuel/AndroidStudioProjects/TBGApp/app/src/main/res/layout/activity_main.xml" value="0.2876997915218902" />
         <entry key="..\:/Users/Keith Lemuel/AndroidStudioProjects/TBGApp/app/src/main/res/layout/activity_tenant.xml" value="0.5" />
         <entry key="..\:/Users/Keith Lemuel/AndroidStudioProjects/TBGApp/app/src/main/res/layout/btn_custom.xml" value="0.1921875" />
-        <entry key="..\:/Users/Keith Lemuel/AndroidStudioProjects/TBGApp/app/src/main/res/layout/fragment_log_in.xml" value="0.33" />
+        <entry key="..\:/Users/Keith Lemuel/AndroidStudioProjects/TBGApp/app/src/main/res/layout/fragment_gps_listings.xml" value="0.25" />
+        <entry key="..\:/Users/Keith Lemuel/AndroidStudioProjects/TBGApp/app/src/main/res/layout/fragment_log_in.xml" value="0.25" />
+        <entry key="..\:/Users/Keith Lemuel/AndroidStudioProjects/TBGApp/app/src/main/res/layout/fragment_post_listings.xml" value="0.33" />
+        <entry key="..\:/Users/Keith Lemuel/AndroidStudioProjects/TBGApp/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
         <entry key="..\:/Users/Keith Lemuel/AndroidStudioProjects/TBGApp/app/src/main/res/layout/fragment_register.xml" value="0.33" />
         <entry key="..\:/Users/Keith Lemuel/AndroidStudioProjects/TBGApp/app/src/main/res/layout/fragment_tenant_gps_listings.xml" value="0.5" />
         <entry key="..\:/Users/Keith Lemuel/AndroidStudioProjects/TBGApp/app/src/main/res/layout/fragment_tenant_gpslisting.xml" value="0.215625" />
